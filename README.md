@@ -1,11 +1,17 @@
-EJERCICIO CAESAR CIPHER
-=======================
+EJERCICIO TARJETA DE CREDITO VÁLIDA
+===================================
 
 Enunciado: 
 ----------
-Crea una web que pida, por medio de un prompt(), una frase al usuario y devuelva el mismo mensaje encriptado según el algoritmo de Cifrado César con el parámetro de desplazamiento de 33 espacios hacia la derecha
+Crea una web que pida, por medio de un prompt(), el número de una tarjeta de crédito y confirme su validez según el algoritmo de Luhn. Lee este blog que explica cómo funciona el algoritmo de Luhn.
 
-Por ejemplo:
+Consideraciones Específicas
+---------------------------
+1. Tu código debe estar compuesto por 1 función: isValidCard
 
-Texto original: ABCDEFGHIJKLMNOPQRSTUVWXYZ
-Texto codificado: HIJKLMNOPQRSTUVWXYZABCDEFG
+2. El usuario no debe poder ingresar un campo vacío
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
