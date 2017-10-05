@@ -125,6 +125,8 @@ Puedes ver el diagrama de flujo aquí:
 
 ![Diagrama de flujo](/DiagramaDeFlujo.jpeg)
 
+*Disclaimer: el or que aparece en el diagrama de flujo enrealidad es un for, me faltó una lrtra :(*
+
 *OffComent: Eso fue todo chicos, denle like, suscribanse, besitos ahahhahhaha :D*
 
 
