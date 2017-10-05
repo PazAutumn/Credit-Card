@@ -121,6 +121,10 @@ Algoritmo de Luhn
  ``` 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
+Puedes ver el diagrama de flujo aquí:
+
+![Diagrama de flujo](/DiagramaDeFlujo.jpeg)
+
 *OffComent: Eso fue todo chicos, denle like, suscribanse, besitos ahahhahhaha :D*
 
 
