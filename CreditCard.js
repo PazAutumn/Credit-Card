@@ -2,25 +2,27 @@ function isValidCard() { //creo una función para validar mi tarjeta de credito
 
    do{ 
      
-      creditCardNumber = (prompt("Ingresa un número de tarjeta de crédito de 16 dígitos", "0000000000000000"));  //creo una variable llamada CreditCard cuyo valor será el número de la tarjeta de crédito que el usuario ingrese mediante un prompt
+      var creditCardNumber = (prompt("Ingresa un número de tarjeta de crédito de 16 dígitos", "0000000000000000"));  //creo una variable llamada CreditCardNumber cuyo valor será el número de la tarjeta de crédito que el usuario ingrese mediante un prompt
 
       }while(creditCardNumber === ""); //Mientras el campo esté vacio el prompt le vuelve a pedir al usuario que ingrese un número de tarjeta de credito
    
+   //una vez que el usuario ingresó los datos...
      
-  var numberLength = creditCardNumber.length;
+  var numberLength = creditCardNumber.length; //creo una variable numerLength y la igualo al largo de la variable creditCardNumber que debería ser igual a 16
   
-  var numeroInvertido = "";
+  var numeroInvertido = ""; //Creo una variable vacía llamada numeroInvertido donde guardaré el número de la tarjeta de credito en orden inverso
  
-  while (numberLength>=0) {
-    numeroInvertido = numeroInvertido + creditCardNumber.charAt(numberLength);
-    numberLength--;
+  while (numberLength>=0) { //Mientras el largo del número sea mayor o igual a 0... En cada vuelta del bucle y con el método .charAt() iremos componiendo la cadena invertida. En la primera iteracción obtenemos el último carácter de la cadena y lo ponemos al principio de la cadena invertida, en la segunda iteracción obtenemos el penúltimo carácter y o ponemos como segundo carácter de la cadena invertida. Así hasta que hayamos recorrido la cadena por completo.
+
+    numeroInvertido = numeroInvertido + creditCardNumber.charAt(numberLength); 
+    numberLength--; //
   
   } 
 
-  numeroInvertido,
-    separador = "",
-    arregloDeSubCadenas = numeroInvertido.split(separador);
-creditCard = arregloDeSubCadenas;
+  numeroInvertido, //el número en orden inverso que quedó en la variable numeroInvertido
+    separador = "", //creamos una variable que contiene un separador para utilizar el método split
+    arregloDeSubCadenas = numeroInvertido.split(separador); //la variable arregloDeSubCadenas será igual a cada número guardado en númeroInvertido ahora cada uno como un elemento diferente dentro de un array
+creditCard = arregloDeSubCadenas; //creditCard será igual al resultado de arregloDeSubCadenas
 
 
 
@@ -30,7 +32,7 @@ creditCard = arregloDeSubCadenas;
    
    for (var i = 0; i < creditCard.length; i++) { //con el ciclo for recorro los 16 dígitos de la tarjeta de credito para averiguar si es válida según al algoritmo de Luhn
         
-       if (i % 2 == 1) { //si el residuo de i entre dos es 0 significará que el número es par
+       if (i % 2 == 1) { //si el residuo de i entre dos es 1 significará que el indice de la posición es impar
            
            value = 2 * creditCard[i]; // la variable value será igual a 2 multiplicado por cada uno de los 16 números de la tarjeta de credito (creditCard[i])
            
@@ -51,9 +53,9 @@ creditCard = arregloDeSubCadenas;
    
    if (result == true) { //valido si numLuhn es 0 o no y escribo en pantalla el mensaje
        
-       alert("¡La tarjeta "+creditCardNumber+" es válida!");
+       alert("¡La tarjeta "+creditCardNumber+" es válida!"); //Si la tarjeta es válida
    }else if (result == false) {
        
-       alert("¡La tarjeta "+creditCardNumber+" es inválida!");
+       alert("¡La tarjeta "+creditCardNumber+" es inválida!"); //Si la tarjeta es inválida
    }
 }
