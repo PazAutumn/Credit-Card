@@ -1,0 +1,23 @@
+{
+  "name": "credit-card",
+  "version": "1.0.0",
+  "description": "EJERCICIO TARJETA DE CREDITO VÁLIDA ===================================",
+  "main": "CreditCard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PazAutumn/Credit-Card.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PazAutumn/Credit-Card/issues"
+  },
+  "homepage": "https://github.com/PazAutumn/Credit-Card#readme",
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-google": "^0.9.1"
+  }
+}
